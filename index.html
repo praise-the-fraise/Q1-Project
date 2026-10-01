@@ -1,11 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Personal Portfolio</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color:antiquewhite;
+        }
+
+        header {
+            background-color: rgb(26, 57, 39);
+            padding: 15px;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        nav {
+            float: right;
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+        }
+
+        .home {
+            background-color: rgb(110, 123, 161);
+            text-align: center;
+            padding: 30px;
+        }
+
+        .home img {
+            width: 100px;
+        }
+
+        .name {
+            color: rgb(27, 33, 75);
+        }
+
+        section {
+            width: 70%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            background-color: rgb(126, 195, 155);
+            color: white;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .work {
+            margin-bottom: 40px;
+        }
+
+        .work img {
+            width: 300px;
+            border: 2px dashed black;
+        }
+
+        form {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid lightgray;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            background-color: rgb(30, 43, 92);
+            color: white;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: rgb(26, 57, 39);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+
 </head>
+
+
 <body>
-    
+
+    <!-- Header -->
+
+    <header>
+
+        <a href="#home">
+            <img src="">
+        </a>
+
+        <nav>
+
+            <a href="#about">About Me</a>
+
+            <a href="#works">My Works</a>
+
+            <a href="#contact">Contact Me</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Home -->
+
+    <div class="home" id="home">
+
+        <img src="">
+
+        <h1>Hello, we're <span class="name">Chaos duo</span></h1>
+
+        <p>Aspiring Web Developer</p>
+
+    </div>
+
+
+    <!-- About Me -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hi! We're Fraise and Gia, 
+            we're students learning web development 
+            for our ICT class, and we'd like to expand 
+            our knowledge in this field. We are currently 
+            learning HTML and CSS, and we are excited to learn 
+            more about web development.
+        </p>
+    </section>
+
+
+    <!-- My Works -->
+
+    <section id="works">
+
+        <h2>My Works</h2>
+
+
+        <div class="work">
+
+            <h3>My Favorite Spotify Artist</h3>
+
+            <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=600">
+
+            <ul>
+
+                <li>HTML and CSS Project</li>
+
+                <li>Spotify Artist</li>
+
+                <li>Lists and Images</li>
+
+                <li>
+                    <a href="https://github.com/">
+                        View GitHub Repository
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="work">
+
+            <h3>My Rate a Movie Form</h3>
+
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600">
+
+            <ol>
+
+                <li>HTML Forms</li>
+
+                <li>Movie Recommendations</li>
+
+                <li>Rating</li>
+
+            </ol>
+
+            <a href="https://github.com/">
+                View GitHub Repository
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Me -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <label>
+                <b>Your Name:</b>
+            </label>
+
+            <input
+                type="text"
+                placeholder="Jane Doe"
+            >
+
+
+            <label>
+                <b>Your Email:</b>
+            </label>
+
+            <input
+                type="email"
+                placeholder="jane_doe@gmail.com"
+            >
+
+
+            <p>
+                <b>How did you find me?</b>
+                <br>
+                <input type="radio" name="find">
+                Facebook
+
+                <input type="radio" name="find">
+                Google
+
+                <input type="radio" name="find">
+                Friends
+            </p>
+
+
+            <p>
+
+                <b>Interested In:</b>
+
+                <br>
+
+                <input type="checkbox">
+                Web Design
+
+                <input type="checkbox">
+                Graphic Design
+
+                <input type="checkbox">
+                Robotics
+
+            </p>
+
+
+            <label>
+                <b>Rate my Portfolio:</b>
+            </label>
+
+            <select>
+
+                <option>-- Select Rating --</option>
+
+                <option>5 Stars</option>
+
+                <option>4 Stars</option>
+
+                <option>3 Stars</option>
+
+                <option>2 Stars</option>
+
+                <option>1 Star</option>
+
+            </select>
+
+
+            <label>
+                <b>Any Feedback?</b>
+            </label>
+
+            <textarea
+                rows="5"
+                placeholder="feedback here..."
+            ></textarea>
+
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </section>
+
 </body>
+
 </html>
